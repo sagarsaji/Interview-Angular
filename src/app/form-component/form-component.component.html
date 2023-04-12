@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div class="container">
+    <h1 class="text-center">Form Page</h1>
+    <h1>{{message}}</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" [(ngModel)]="form.name" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="emailid">Email ID:</label>
+            <input type="text" [(ngModel)]="form.emailid" class="form-control" id="emailid" name="emailid">
+        </div>
+        <div class="form-group">
+            <label for="phno">Phone Number:</label>
+            <input type="text" [(ngModel)]="form.phno" class="form-control" id="phno" name="phno">
+        </div>
+        <div class="form-group">
+            <label for="skills">Skills:</label>
+            <input type="text" [(ngModel)]="form.skills" class="form-control" id="skills" name="skills">
+        </div>
+        <div class="form-group">
+            <label for="experience">Experience:</label>
+            <input type="text" [(ngModel)]="form.experience" class="form-control" id="experience" name="experience">
+        </div>
+        <div class="form-group">
+            <label for="intdate">Interview Date:</label>
+            <input type="text" [(ngModel)]="form.intdate" class="form-control" id="intdate" name="intdate">
+        </div>
+        <div class="form-group">
+            <label for="time">Interview Time:</label>
+            <input type="text" [(ngModel)]="form.time" class="form-control" id="time" name="time">
+        </div>
+        <div class="form-group">
+            <label for="link">Interview Link:</label>
+            <input type="text" [(ngModel)]="form.link" class="form-control" id="link" name="link">
+        </div>
+        <div class="form-group">
+            <label for="poc">Point of Contact:</label>
+            <input type="text" [(ngModel)]="form.poc" class="form-control" id="poc" name="poc">
+        </div>
+        <div class="form-group">
+            <input class="btn btn-success" type="submit" name="submit" value="Register" (click)="RegisterNow()">
+        </div>
+    </form>
+</div>
