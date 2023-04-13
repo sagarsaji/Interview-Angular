@@ -22,8 +22,10 @@ export class FormComponentComponent implements OnInit{
     throw new Error('Method not implemented.');
   }
 
-  public RegisterNow(){
+  RegisterNow(){
+    
     let resp = this.service.DoRegistration(this.form);
     resp.subscribe(data=>this.message=data);
+    alert("details submitted");
   }
 }

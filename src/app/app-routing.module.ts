@@ -4,7 +4,7 @@ import { FormComponentComponent } from './form-component/form-component.componen
 
 const routes: Routes = [
   {path:"",redirectTo:"form-component",pathMatch:"full"},
-    {path:"form-component",component:FormComponentComponent}
+  {path:"form-component",component:FormComponentComponent}
 ];
 
 @NgModule({
